@@ -1,0 +1,41 @@
+body{
+background-image: url(./img/tucback.jpg);
+background-size:cover;
+width: 900px;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+ }
+
+h1 {
+    color: #000; /* テキストの色 */
+    text-shadow: 
+      -1px -1px 0 white, /* 左上 */
+      1px -1px 0 white, /* 右上 */
+      -1px 1px 0 white, /* 左下 */
+      1px 1px 0 white; /* 右下 */
+    font-weight: bold;
+    font-size: 55px;
+}
+
+p{
+    color: #000; /* テキストの色 */
+    text-shadow: 
+      -1px -1px 0 white, /* 左上 */
+      1px -1px 0 white, /* 右上 */
+      -1px 1px 0 white, /* 左下 */
+      1px 1px 0 white; /* 右下 */
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+p{
+    font-weight: bold;
+    margin: 0px 0px 10px;
+    padding: 20px;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "style.css" type="text/css">
+    <script src="js/kadai.js"></script>
+
+    <link rel="shortcut icon" href="./img/7.png">
+    <title>My name is juggling boy</title>
+
+</head>
+
+<body>
+    
+    <h1>ジャ◯ラーぽいなにかを楽しめるサイト 音出して楽しんでね！<img src="./img/aprilfool_piert_face.png" width="60" height="45" ><img src="./img/aprilfool_piert_face.png" width="60" height="45" ><img src="./img/aprilfool_piert_face.png" width="60" height="45" ><img src="./img/aprilfool_piert_face.png" width="60" height="45" ><img src="./img/aprilfool_piert_face.png" width="60" height="45" ><img src="./img/aprilfool_piert_face.png" width="60" height="45" ><img src="./img/aprilfool_piert_face.png" width="60" height="45" onclick="magic()"><img src="./img/aprilfool_piert_face.png" width="60" height="45" ></h1>
+    <h4>機種名:南電親製 My name is juggling boy(約20円スロ)<br>
+        超最新機種なので、クレジットが無限に入ります<br>
+        -----------------------------------------------<br>
+        役の一覧↓↓<br>
+        666 (チェリー 2バック)<br><img src="./img/fruit_sakuranbo.png" width="60" height="45"><img src="./img/fruit_sakuranbo.png" width="60" height="45"><img src="./img/fruit_sakuranbo.png" width="60" height="45"><br>
+        111 (ピエロ 10バック)<br><img src="./img/aprilfool_piert_face.png" width="60" height="45"><img src="./img/aprilfool_piert_face.png" width="60" height="45"><img src="./img/aprilfool_piert_face.png" width="60" height="45"><br>
+        222<br>
+        444<br>
+        888 (ぶどう 9バック)<br><img src="./img/fruit_grape.png" width="60" height="45"><img src="./img/fruit_grape.png" width="60" height="45"><img src="./img/fruit_grape.png" width="60" height="45"><br>
+        333<br>
+        555<br>
+        999(リプレイ)<br><img src="./img/animal_zou.png" width="60" height="45"><img src="./img/animal_zou.png" width="60" height="45"><img src="./img/animal_zou.png" width="60" height="45"><br>
+        000(ベル 14バック)<br><img src="./img/christmas_bell.png" width="60" height="45"><img src="./img/christmas_bell.png" width="60" height="45"><img src="./img/christmas_bell.png" width="60" height="45"><br><br>
+        777(スリーセブン 192バック!!! 条件:gogoランプあり)<br><img src="./img/7.png" width="60" height="45"><img src="./img/7.png" width="60" height="45"><img src="./img/7.png" width="60" height="45"><br>
+        -----------------------------------------------<br>
+        設定6!<u>光る確率は1/120!!</u><br>
+        ジャ◯連も忠実再現!BB後、50Gまで<u>確率1/60!!!!!!!</u><br>
+        音を出してプレイしたら<u>100倍楽しめます</u><br>
+        完全実力機です。（<s>これ正直うまくない方が絶対いい</s>）<br>
+        ㊙攻略法:<u>基本的に666(チェリー)を狙いましょう ランプ抽選が多く行われます！ <u>(いっぱい揃えると...</u>) </u><br>
+        <br>
+        光ってない状態で777を揃えると隣のババアがすべてのクレジットを奪ってきます。(これがRBのかわり)<br>
+        (ちなみに生入り機能も搭載しています^^)<br><img src="./img/fantasy_witch.png" width="60" height="45"><img src="./img/fantasy_witch.png" width="60" height="45"><img src="./img/fantasy_witch.png" width="60" height="45"><br>
+        基本的に制作時に出てきたバグ全部消して作れたつもりなので、バグ見つけたらぜひ教えてくださいお願いいたします</h4>
+    <h3 id = "midasi">景品交換をする (工事中:一応完成していますが、一部の挙動がおかしいです。)</h3><br>
+    <img src="./img/building_pachinko_kankinjo.png" width="190" height="190" onclick="moving()"><br>
+    
+    <h3 id="midasi">投資額</h3><h3 id="midasi">総回転数</h3><h3 id="midasi">ボーナス間</h3><h3 id="midasi">　BB</h3><h3 id="midasi">　RB </h3><h3 id="midasi">役当選回数</h3><br>
+    <p id="tousi">0</p><p id="kaiten">0</p><p id="bbkaiten">0</p><p id="bb">0</p><p id="rb">0</p><p id="yakuCount">0</p><br>
+    <button onclick="kakin()" style="width: 230px; height: 65px; font-size: 24px;"> 1000円を投入する </button><br>
+    
+
+
+    <div id = container><h1 id = 'peka'></h1>
+        
+        <div style="display:flex;width:600px;flex-wrap:wrap; ">
+            
+            
+            <div id="c1" class="w33">6</div>
+            <div id="c2" class="w33">6</div>
+            <div id="c3" class="w33">5</div>
+            <div class="w33" onclick="stop(0)"><img class="stop-button" src="./img/push_button-1.jpg" width="90" height="90" onclick="stop(0)"></div>
+            <div class="w33" onclick="stop(1)"><img class="stop-button" src="./img/push_button-1.jpg" width="90" height="90" onclick="stop(1)"></div>
+            <div class="w33" onclick="stop(2)"><img class="stop-button" src="./img/push_button-1.jpg" width="90" height="90" onclick="stop(2)"></div>
+            <div class="w100"><button onclick="bet()" style="width: 200px; height: 70px; font-size: 24px;"> bet </button><button onclick="start()" style="width: 200px; height: 70px; font-size: 24px;"> start </button>
+        </div>
+    </div>
+
+    <h3>CREDIT</h3><br>
+    <p id="credit">0</p>
+    <h3>PAY OUT</h3><br>
+    <p id="pay">0</p>
+    
+    
+
+
+    
+    <audio id="btn_audio1">
+        <source src="./video/bet.mp3" type="audio/mp3">
+    </audio>
+    <audio id="btn_audio2">
+        <source src="./video/start.mp3" type="audio/mp3">
+    </audio>
+    <audio id="btn_audio3">
+        <source src="./video/stop.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="btn_audio777">
+        <source src="./video/777.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="koyaku_audio">
+        <source src="./video/grape.mp3" type="audio/mp3">
+    </audio>
+    <audio id="koyaku_audio1">
+        <source src="./video/replay.mp3" type="audio/mp3">
+    </audio>
+    <audio id="koyaku_audio2">
+        <source src="./video/cherry.mp3" type="audio/mp3">
+    </audio>
+    <audio id="koyaku_audio3">
+        <source src="./video/piero.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="tousi1">
+        <source src="./video/tounyu.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="pekari">
+        <source src="./video/peka.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="baba">
+        <source src="./video/babalol.mp3" type="audio/mp3">
+    </audio>
+
+</body>
+</html>
